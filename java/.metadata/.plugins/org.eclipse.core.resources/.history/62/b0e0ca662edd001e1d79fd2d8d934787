@@ -1,0 +1,21 @@
+import java.io.BufferedReader; // == Scanner 
+import java.io.BufferedWriter; // == print
+import java.io.InputStreamReader; // == BufferedReader안에 있는 처리모듈..?
+import java.io.OutputStreamWriter; // == BufferedWriter안에 있는 처리모듈..?
+import java.io.IOException; // 예외처리 모듈..?
+
+public class Note1  {
+    public static void main(String args[]) throws IOException { // 예외처리??
+    		
+//    	BufferedReader br = new BufferedReader(new InputStreamReader(System.in)); // == (Scanner scn = new Scanner(System.in));
+//    	String s = br.readLine();	// == (String s = scn.next());
+//    	int i = Integer.parseInt(s);
+//    	
+//    	System.out.println(i);
+    	
+    	BufferedWriter wr = new BufferedWriter(new OutputStreamWriter(System.out));
+    	String str = "abcdefg";
+    	wr.write(str);
+    	wr.newLine();
+    }
+}

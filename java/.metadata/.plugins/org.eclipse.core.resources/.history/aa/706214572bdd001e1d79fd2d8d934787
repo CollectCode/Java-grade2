@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class Note1  {
+    public static void main(String args[])    {
+        Scanner scn = new Scanner(System.in);
+        
+        int howmany = scn.nextInt() / 4;
+        String l = "long";
+        String i = "int";
+        
+        for (int j = 0; j < howmany; j++)	{
+        	System.out.print(l + " ");
+        }
+    }
+}

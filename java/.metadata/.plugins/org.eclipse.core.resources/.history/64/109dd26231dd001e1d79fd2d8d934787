@@ -1,0 +1,25 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
+public class Note2 {
+
+	public static void main(String[] args)throws IOException {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		String any = br.readLine();
+		
+		int Num = Integer.parseInt(any);
+		int[][] Nums = new int [Num][3];
+		
+		for (int i = 0; i < Nums.length; i++)	{
+			for (int j = 0; j < Nums[Num].length-1; i++)	{
+				Nums[i][j] = Integer.parseInt(any);
+			}
+			Nums[i][2] += Nums[i][0] * Nums[i][1];
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Note1    {
+    public static void main(String args[])    {
+        Scanner scn = new Scanner(System.in);
+        
+        int totalprice = scn.nextInt();
+        int pdNum = scn.nextInt();
+        int totalprice2 = 0;
+        int[][] pd = new int[pdNum][3];
+        
+        for (int i = 0; i < pd.length; i++)    {
+            for (int j = 0; j < pd[i].length; j++)    {
+                if(j != pd[i].length-1)    {
+                    pd[i][j] = scn.nextInt();
+               }
+                pd[i][2] = pd[i][0] * pd[i][1];
+            }
+        }
+        
+        for (int k = 0; k < pd.length; k++)    {
+            totalprice2 += pd[k][2];
+        }
+        
+        if (totalprice == totalprice2)    {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
+        }
+    }
+}
